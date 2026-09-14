@@ -1,8 +1,20 @@
-# openstack-aws-siem-monitoring
-A centralized Hybrid Cloud SIEM solution (OpenStack &amp; AWS) integrated with ELK Stack (v7.17) and Sigma/KQL rules for real-time security threat detection
 # Hệ thống SIEM Đa Đám Mây: Tập trung Logs từ OpenStack & AWS tích hợp ELK Stack
 
 Giải pháp Quản lý Sự kiện và An ninh Thông tin (SIEM) tập trung được thiết kế cho môi trường điện toán đám mây lai (Hybrid Cloud), tích hợp **ELK Stack (v7.17)** để thu thập, chuẩn hóa và phát hiện các mối đe dọa bảo mật trên hạ tầng **OpenStack (Private Cloud)** và **AWS (Public Cloud)**.
+
+---
+
+## 🎥 Video Demo Thực nghiệm 3 Kịch bản Tấn công
+Dưới đây là video chi tiết quá trình giả lập tấn công và hệ thống SIEM kích hoạt cảnh báo thời gian thực cho từng kịch bản:
+
+### 1. Demo Kịch bản 1: Tấn công SSH Brute-force (Ubuntu OS)
+[![Demo SSH Brute-force](https://youtu.be/4cFDx3EoJbo)
+
+### 2. Demo Kịch bản 2: Dò tìm tài khoản AWS Console Login Failure
+[![Demo AWS Console Login](https://youtu.be/h6biN0oe4wk)
+
+### 3. Demo Kịch bản 3: Xóa tài nguyên S3 Bucket (Phá hoại dữ liệu)
+[![Demo S3 Deletion](https://youtu.be/2UlhfUk2h8Q)
 
 ---
 
@@ -35,3 +47,13 @@ Hệ thống đã được kiểm thử thành công đối với 3 kịch bản
 | **KB-03** | Xóa tài nguyên S3 Bucket (Phá hoại dữ liệu) | AWS S3 Storage | Single Event Rule: Phát hiện tức thời lệnh gọi API (`DeleteBucket`, `DeleteObjects`) | **Critical (Nguy cấp)** |
 
 ---
+
+## 📁 4. Cấu trúc Thư mục Dự án
+```text
+├── configs/
+│   ├── logstash/         # File cấu hình filter và biểu thức grok của Logstash
+│   └── filebeat/         # Cấu hình Filebeat cho OpenStack host và AWS S3
+├── rules/
+│   └── kql-sigma/        # Luật phát hiện Kibana và các quy tắc Sigma đã dịch
+├── dashboards/           # Các bảng điều khiển (Dashboard) bảo mật xuất từ Kibana
+└── docs/                 # Tài liệu chi tiết và sơ đồ kiến trúc
