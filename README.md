@@ -5,16 +5,10 @@ Giải pháp Quản lý Sự kiện và An ninh Thông tin (SIEM) tập trung đ
 ---
 
 ## 🎥 Video Demo Thực nghiệm 3 Kịch bản Tấn công
-Dưới đây là video chi tiết quá trình giả lập tấn công và hệ thống SIEM kích hoạt cảnh báo thời gian thực cho từng kịch bản:
-
-### 1. Demo Kịch bản 1: Tấn công SSH Brute-force (Ubuntu OS)
-[![Demo SSH Brute-force](https://youtu.be/4cFDx3EoJbo)
-
-### 2. Demo Kịch bản 2: Dò tìm tài khoản AWS Console Login Failure
-[![Demo AWS Console Login](https://youtu.be/h6biN0oe4wk)
-
-### 3. Demo Kịch bản 3: Xóa tài nguyên S3 Bucket (Phá hoại dữ liệu)
-[![Demo S3 Deletion](https://youtu.be/2UlhfUk2h8Q)
+Bạn có thể xem chi tiết quá trình giả lập tấn công và hệ thống SIEM kích hoạt cảnh báo thời gian thực qua các liên kết dưới đây:
+* [Xem Demo Kịch bản 1: Tấn công SSH Brute-force (Ubuntu OS)](https://youtu.be/4cFDx3EoJbo)
+* [Xem Demo Kịch bản 2: Dò tìm tài khoản AWS Console Login Failure](https://youtu.be/h6biN0oe4wk)
+* [Xem Demo Kịch bản 3: Xóa tài nguyên S3 Bucket (Phá hoại dữ liệu)](https://youtu.be/2UlhfUk2h8Q)
 
 ---
 
