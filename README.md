@@ -42,12 +42,3 @@ Hệ thống đã được kiểm thử thành công đối với 3 kịch bản
 
 ---
 
-## 📁 4. Cấu trúc Thư mục Dự án
-```text
-├── configs/
-│   ├── logstash/         # File cấu hình filter và biểu thức grok của Logstash
-│   └── filebeat/         # Cấu hình Filebeat cho OpenStack host và AWS S3
-├── rules/
-│   └── kql-sigma/        # Luật phát hiện Kibana và các quy tắc Sigma đã dịch
-├── dashboards/           # Các bảng điều khiển (Dashboard) bảo mật xuất từ Kibana
-└── docs/                 # Tài liệu chi tiết và sơ đồ kiến trúc
