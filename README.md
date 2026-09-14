@@ -31,7 +31,6 @@ Hệ thống đã được kiểm thử thành công đối với 3 kịch bản
 | Mã KB | Kịch bản Tấn công | Hệ thống Mục tiêu | Cơ chế Phát hiện (KQL / Ngưỡng) | Mức độ Cảnh báo |
 | :--- | :--- | :--- | :--- | :--- |
 | **KB-01** | Tấn công dò mật khẩu SSH Brute-force | Máy ảo Ubuntu (`victim-2`) | Threshold Rule: $>20$ lần đăng nhập thất bại trong 1 phút (`event.dataset: "system.auth"`) | **Critical (Nguy cấp)** |
-
 | **KB-02** | Dò tìm tài khoản AWS Console Login Failure | AWS Control Plane | Threshold Rule: $>10$ lần lỗi truy cập trong 5 phút (`aws.cloudtrail` & `ConsoleLogin`) | **High (Cao)** |
 | **KB-03** | Xóa tài nguyên S3 Bucket (Phá hoại dữ liệu) | AWS S3 Storage | Single Event Rule: Phát hiện tức thời lệnh gọi API (`DeleteBucket`, `DeleteObjects`) | **Critical (Nguy cấp)** |
 
